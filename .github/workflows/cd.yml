@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - name: Pull Docker image
-      run: docker pull Mehmet72/cicd-pipeline:latest
+      run: docker pull mehmetaydgn1/cicd-pipeline:latest
     - name: Delete Old docker container
       run:  docker rm -f cicd-pipeline-container || true
     - name: Run Docker Container
-      run: docker run -d -p 8080:8080 --name cicd-pipeline-container Mehmet72/cicd-pipeline
+      run: docker run -d -p 8080:8080 --name cicd-pipeline-container mehmetaydgn1/cicd-pipeline
